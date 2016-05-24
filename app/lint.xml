@@ -1,0 +1,7 @@
+<lint>
+    <issue id="InvalidPackage">
+        <ignore regexp="okio-1.6.0.jar"/>
+        <ignore regexp="retrofit-2.0.0-beta3.jar"/>
+        <ignore regexp="pkix-1.54.0.0.jar"/>
+    </issue>
+</lint>

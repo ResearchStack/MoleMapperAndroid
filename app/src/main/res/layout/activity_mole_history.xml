@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+>
+
+    <org.researchstack.molemapper.ui.view.MeasurementView
+        android:id="@+id/mole_history_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mole_history_tabs"
+        android:scaleType="centerCrop"
+    />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/rsb_layout_toolbar"
+    />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mole_history_tabs"
+        style="@style/Widget.MoleMapper.IconTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:background="@color/mm_colorPrimary"
+        android:clipToPadding="false"
+        android:minHeight="48dp"
+        android:paddingRight="50dp"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@color/mm_tab_text_color"
+    />
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/rsb_progress"/>
+
+</RelativeLayout>

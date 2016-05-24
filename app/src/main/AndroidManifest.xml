@@ -1,0 +1,151 @@
+<manifest
+    package="org.researchstack.molemapper"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+        android:name="org.researchstack.molemapper.MoleMapperApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MoleMapper"
+    >
+
+        <activity
+            android:name="org.researchstack.skin.ui.SplashActivity"
+            android:theme="@style/Theme.MoleMapper.Splash"
+            android:windowSoftInputMode="adjustNothing"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="org.researchstack.skin.ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MoleMapper.Main"
+        />
+
+        <activity
+            android:name="org.researchstack.molemapper.PhotoCaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MoleMapper.TransparentStatusBar"
+        />
+
+        <activity
+            android:name="org.researchstack.molemapper.BodyMapActivity"
+        />
+
+        <activity
+            android:name="org.researchstack.molemapper.BodyZoneActivity"
+        />
+
+        <activity
+            android:name="org.researchstack.molemapper.MoleHistoryActivity"
+            android:theme="@style/Theme.MoleMapper.TransparentStatusBar"
+        />
+
+        <activity
+            android:name="org.researchstack.molemapper.MoleMeasurementActivity"
+            android:theme="@style/Theme.MoleMapper.TransparentStatusBar"
+        />
+
+        <activity
+            android:name="org.researchstack.skin.ui.OnboardingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MoleMapper.Onboarding"
+        />
+
+        <activity
+            android:name="org.researchstack.backbone.ui.ViewTaskActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.MoleMapper.Survey"
+        />
+
+        <activity
+            android:name="org.researchstack.skin.ui.ConsentTaskActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.MoleMapper.Survey"
+        />
+
+        <activity
+            android:name="org.researchstack.skin.ui.SignUpTaskActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MoleMapper.Survey"
+        />
+
+        <activity
+            android:name="org.researchstack.skin.ui.EmailVerificationActivity"
+            android:label="@string/rss_confirm"
+            android:theme="@style/Theme.MoleMapper.Survey"
+        />
+
+        <activity
+            android:name="org.researchstack.backbone.ui.ViewWebDocumentActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MoleMapper.Survey"
+        />
+
+        <activity
+            android:name="org.researchstack.backbone.ui.ViewVideoActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize|screenLayout|uiMode"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MoleMapper.Video"
+        />
+
+        <activity
+            android:name="org.researchstack.molemapper.MoleMapperSettingsActivity"
+            android:label="@string/rss_settings"
+            android:theme="@style/Theme.MoleMapper.Settings"/>
+
+        <activity
+            android:name="org.researchstack.molemapper.ui.MoleLearnActivity"
+            android:label="@string/learn_more"
+            android:theme="@style/Theme.MoleMapper.Settings"
+        />
+
+        <receiver
+            android:name="org.researchstack.skin.notification.TaskNotificationReceiver"
+            android:enabled="true"
+        />
+
+        <receiver
+            android:name="org.researchstack.skin.notification.DeviceBootReceiver"
+            android:enabled="true"
+            android:exported="false"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="org.researchstack.skin.notification.TaskAlertReceiver"
+            android:enabled="true"
+            android:exported="false"
+        >
+            <intent-filter>
+                <action android:name="org.researchstack.skin.notification.ALERT_CREATE"/>
+                <action android:name="org.researchstack.skin.notification.ALERT_CREATE_ALL"/>
+                <action android:name="org.researchstack.skin.notification.ALERT_DELETE"/>
+                <action android:name="org.researchstack.skin.notification.ALERT_DELETE_ALL"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="XXXXXXXXXXXXXX"/>
+    </application>
+
+</manifest>

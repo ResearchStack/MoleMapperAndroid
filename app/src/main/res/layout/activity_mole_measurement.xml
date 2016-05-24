@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <org.researchstack.molemapper.ui.view.MoleView
+        android:id="@+id/mole_measure_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controls_container"
+        android:scaleType="centerCrop"
+    />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/rsb_layout_toolbar"
+    />
+
+    <!-- TODO Optimize this nesting-->
+    <LinearLayout
+        android:id="@+id/controls_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mm_colorPrimary"
+        android:orientation="vertical"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="8dp"
+        >
+
+            <Space
+                android:id="@+id/space_left_top"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ic_x"
+            />
+
+            <org.researchstack.molemapper.ui.view.MeasurementControlView
+                android:id="@+id/mole_measure_move_up"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/space_left_top"
+                android:background="@drawable/bg_measurement_move"
+                android:src="@drawable/ic_arrow_up_16dp"
+                android:tint="?attr/colorPrimary"
+            />
+
+            <org.researchstack.molemapper.ui.view.MeasurementControlView
+                android:id="@+id/mole_measure_move_left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/space_left_top"
+                android:layout_below="@+id/space_left_top"
+                android:background="@drawable/bg_measurement_move"
+                android:rotation="-90"
+                android:src="@drawable/ic_arrow_up_16dp"
+                android:tint="?attr/colorPrimary"
+            />
+
+            <org.researchstack.molemapper.ui.view.MeasurementControlView
+                android:id="@+id/mole_measure_move_down"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/mole_measure_move_up"
+                android:layout_below="@+id/space_left_top"
+                android:background="@drawable/bg_measurement_move"
+                android:rotation="180"
+                android:src="@drawable/ic_arrow_up_16dp"
+                android:tint="?attr/colorPrimary"
+            />
+
+            <org.researchstack.molemapper.ui.view.MeasurementControlView
+                android:id="@+id/mole_measure_move_right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/space_left_top"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/mole_measure_move_down"
+                android:background="@drawable/bg_measurement_move"
+                android:rotation="90"
+                android:src="@drawable/ic_arrow_up_16dp"
+                android:tint="?attr/colorPrimary"
+            />
+
+            <org.researchstack.molemapper.ui.view.MeasurementControlView
+                android:id="@+id/mole_measure_scale_up"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_measurement_scale"
+                android:src="@drawable/ic_plus_16dp"
+                android:tint="?attr/colorPrimary"
+            />
+
+            <org.researchstack.molemapper.ui.view.MeasurementControlView
+                android:id="@+id/mole_measure_scale_down"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24dp"
+                android:layout_toLeftOf="@+id/mole_measure_scale_up"
+                android:background="@drawable/bg_measurement_scale"
+                android:src="@drawable/ic_minus_16dp"
+                android:tint="?attr/colorPrimary"
+            />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#66FFFFFF"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+        >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/reference"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+            />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/mole_measure_reference"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:entries="@array/mole_reference_names"
+            />
+
+            <TextView
+                android:id="@+id/mole_measure_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="sans-serif-medium"
+                android:padding="16dp"
+                android:text="@string/finish"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

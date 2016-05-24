@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="mole_reference_names">
+        <item>Penny</item>
+        <item>Nickel</item>
+        <item>Dime</item>
+        <item>Quarter</item>
+    </string-array>
+
+    <string-array name="chart_progress_center_labels">
+        <item>Measured</item>
+        <item>Unmeasured</item>
+    </string-array>
+
+    <string-array name="male_names">
+        <item>Michael Jackson</item>
+        <item>Albert Einstein</item>
+        <item>William Shakespeare</item>
+        <item>Abraham Lincoln</item>
+        <item>Leonardo Da Vinci</item>
+        <item>Elvis Presley</item>
+        <item>Walt Disney</item>
+        <item>Ben Franklin</item>
+        <item>George Washington</item>
+        <item>Napoleon Moleaparte</item>
+        <item>John Lennon</item>
+        <item>Christopher Columbus</item>
+        <item>Thomas Edison</item>
+        <item>Neil Armstrong</item>
+        <item>Bill Gates</item>
+        <item>Isaac Newton</item>
+        <item>Molehammad Ali</item>
+        <item>Tom Hanks</item>
+        <item>Michael Jordan</item>
+        <item>Ludwig van Beethoven</item>
+        <item>Paul McCartney</item>
+        <item>Pablo Piccasmole</item>
+        <item>Thomas Jefferson</item>
+        <item>Mark Twain</item>
+        <item>Ronald Reagan</item>
+        <item>Vincent Van Mole</item>
+        <item>Bill Clinton</item>
+        <item>Mick Jagger</item>
+        <item>Tom Cruise</item>
+        <item>Clint Eastwood</item>
+        <item>Charles Dickens</item>
+        <item>Eddie Murphy</item>
+        <item>Harrison Ford</item>
+        <item>Harry Houdini</item>
+        <item>Jim Carrey</item>
+        <item>Darth Vader</item>
+        <item>Stephen Hawking</item>
+        <item>Bob Dylan</item>
+        <item>Alfred Hitchcock</item>
+        <item>Justin Timberlake</item>
+        <item>Robin Williams</item>
+        <item>Vladimir Putin</item>
+        <item>John Travolta</item>
+        <item>Dwight Eisenhower</item>
+        <item>Jack Nicholson</item>
+        <item>Edgar Allen Mole</item>
+        <item>Denzel Washington</item>
+        <item>Ray Charles</item>
+        <item>Sean Connery</item>
+        <item>Bill Cosby</item>
+        <item>Ernest Hemingway</item>
+        <item>David Letterman</item>
+        <item>Steve Martin</item>
+        <item>Magic Johnson</item>
+        <item>James Dean</item>
+        <item>Sigmund Freud</item>
+        <item>Paul Newman</item>
+        <item>Bob Hope</item>
+        <item>Pamela Anderson</item>
+        <item>Fred Astaire</item>
+        <item>Keith Richards</item>
+        <item>Louis Pasteur</item>
+        <item>Steve Irwin</item>
+        <item>Neil Diamond</item>
+        <item>Andy Griffith</item>
+        <item>James Taylor</item>
+        <item>Frank Lloyd Wright</item>
+        <item>Peyton Manning</item>
+        <item>Lewis Carrol</item>
+        <item>Chevy Chase</item>
+        <item>Miles Davis</item>
+        <item>Howard Stern</item>
+        <item>Roy Rogers</item>
+        <item>Billy Crystal</item>
+        <item>Hank Aaron</item>
+        <item>Henry Kissinger</item>
+        <item>John Candy</item>
+        <item>Norman Rockwell</item>
+        <item>Carl Sagan</item>
+        <item>Danny Glover</item>
+        <item>Willey Mays</item>
+        <item>Andy Rooney</item>
+        <item>Bob Newhart</item>
+        <item>George Carlin</item>
+        <item>Benny Goodman</item>
+        <item>Phil Donahue</item>
+        <item>Terry Bradshaw</item>
+        <item>Walter Cronkite</item>
+        <item>Chuck Yeager</item>
+        <item>Yogi Berra</item>
+        <item>Nathaniel Hawthorne</item>
+        <item>Norman Schwarzkopf</item>
+        <item>Tom Brokaw</item>
+        <item>Arthur Ashe</item>
+        <item>Peter Jennings</item>
+        <item>Charles Darwin</item>
+        <item>Karl Marx</item>
+        <item>Julius Caesar</item>
+        <item>Christopher Columbus</item>
+        <item>Isaac Newton</item>
+        <item>Teddy Molesvelt</item>
+        <item>Wolfgang Amadeus Molezart</item>
+        <item>Ulysses S. Grant</item>
+        <item>Leonardo da Vinci</item>
+        <item>Winston Churchill</item>
+        <item>Genghis Khan</item>
+        <item>Friedrich Nietzsche</item>
+        <item>Franklin D. Molesevelt</item>
+        <item>Sigmund Freud</item>
+        <item>Alexander Hamilton</item>
+        <item>Woodmole Wilson</item>
+        <item>Galileo Galilei</item>
+        <item>Oliver Cromwell</item>
+        <item>James Madison</item>
+        <item>Mark Twain</item>
+        <item>Adam Smith</item>
+        <item>Immanuel Kant</item>
+        <item>John Adams</item>
+        <item>Moletaire</item>
+        <item>Andrew Jackson</item>
+        <item>Nicolaus Copernicus</item>
+        <item>Vladimir Lenin</item>
+        <item>Robert E. Lee</item>
+        <item>Oscar Wilde</item>
+        <item>Francis Bacon</item>
+        <item>Richard Nixon</item>
+        <item>King Arthur</item>
+        <item>Thomas Aquinas</item>
+        <item>Rene Descartes</item>
+        <item>Nikmole-a Tesla</item>
+        <item>Harry Truman</item>
+        <item>Dante Alighieri</item>
+        <item>John Locke</item>
+        <item>Frank Sinatra</item>
+        <item>Akira Kurosawa</item>
+        <item>Sid Vicious</item>
+        <item>Don Draper</item>
+    </string-array>
+
+    <string-array name="female_names">
+        <item>Marilyn Monroe</item>
+        <item>Britney Spears</item>
+        <item>Oprah Winfrey</item>
+        <item>Elizabeth Taylor</item>
+        <item>Hillary Clinton</item>
+        <item>Beyonce Knowles</item>
+        <item>Margaret Thatcher</item>
+        <item>Whoopi Moleberg</item>
+        <item>Julia Roberts</item>
+        <item>Meryl Streep</item>
+        <item>Lucille Ball</item>
+        <item>Tyra Banks</item>
+        <item>Susan B. Anthony</item>
+        <item>Jane Austen</item>
+        <item>Carrie Fisher</item>
+        <item>Michele Pfeiffer</item>
+        <item>Carol Burnett</item>
+        <item>Shirley MacLaine</item>
+        <item>Julia Child</item>
+        <item>Sigourney Weaver</item>
+        <item>Mae West</item>
+        <item>Queen Elizabeth</item>
+        <item>Queen Victoria</item>
+        <item>Joan of Arc</item>
+        <item>Lady Gaga</item>
+        <item>Gloria Steinham</item>
+        <item>Jane Goodall</item>
+        <item>Margaret Thatcher</item>
+        <item>Amoleia Earhart</item>
+        <item>Georgia O\'Keefe</item>
+        <item>Eleanor Molesvelt</item>
+        <item>Marie Curie</item>
+        <item>Annie Oakley</item>
+        <item>Emily Dickinson</item>
+        <item>Clara Barton</item>
+        <item>Florence NIghtengale</item>
+        <item>Harriet Beecher Mole</item>
+        <item>Abigail Adams</item>
+        <item>Catherine the Great</item>
+        <item>Molecahontas</item>
+        <item>Queen Isabella</item>
+        <item>Calamity Jane</item>
+        <item>Ida Tarbell</item>
+        <item>Sally Ride</item>
+        <item>Rosie Riveter</item>
+        <item>Moley Queen of Scots</item>
+        <item>Lady Godiva</item>
+        <item>Barbara Walters</item>
+        <item>Katherine Hepburn</item>
+        <item>Mary Shelley</item>
+        <item>Coco Chanel</item>
+        <item>Marie Antoinette</item>
+        <item>Joan Baez</item>
+        <item>Eva Peron</item>
+        <item>Lizzie Borden</item>
+        <item>Virginia Woolf</item>
+        <item>Ayn Rand</item>
+        <item>Jane Fonda</item>
+        <item>Shirley Temple</item>
+        <item>Lucille Ball</item>
+        <item>Frida Kahlo</item>
+        <item>Clemolepatra</item>
+        <item>Moledonna</item>
+        <item>Grace Kelly</item>
+        <item>Ingrid Bergman</item>
+        <item>Rita Hayworth</item>
+        <item>Janis Joplin</item>
+        <item>Jayne Mansfield</item>
+        <item>Bette Davis</item>
+        <item>Bettie Page</item>
+        <item>Mae West</item>
+        <item>Emily Bronte</item>
+        <item>Eartha Kitt</item>
+        <item>Sylvia Plath</item>
+        <item>Mary Poppins</item>
+        <item>Joan Crawford</item>
+        <item>Lois Lane</item>
+        <item>Daisy Duke</item>
+        <item>Betty Draper</item>
+    </string-array>
+
+    <integer-array name="mole_reference_value">
+        <item>1905</item>
+        <item>2121</item>
+        <item>1791</item>
+        <item>2426</item>
+    </integer-array>
+
+</resources>

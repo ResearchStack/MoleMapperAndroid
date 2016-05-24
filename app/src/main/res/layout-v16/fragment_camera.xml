@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2014 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+    />
+
+    <org.researchstack.molemapper.ui.view.PhotoGridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="80dp"
+        android:paddingTop="96dp"
+        android:paddingRight="80dp"
+        android:paddingBottom="112dp"
+        android:layout_above="@+id/control"
+    />
+
+    <ImageButton
+        android:id="@+id/photo_cancel"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:paddingBottom="32dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="32dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/ic_x"
+    />
+
+    <ImageButton
+        android:id="@+id/photo_flash"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:minWidth="0dp"
+        android:paddingBottom="32dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:src="@drawable/ic_flash_auto"
+    />
+
+    <TextView
+        android:id="@+id/photo_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="16dp"
+        android:background="@color/mm_colorPrimary"
+        android:text="@string/lorem_name"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:layout_above="@+id/control"
+        android:layout_alignParentLeft="true"
+        tools:visibility="visible"
+        android:layout_alignLeft="@+id/texture"
+    />
+
+
+    <RelativeLayout
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/mm_colorPrimary"
+    >
+
+        <ImageView
+            android:id="@+id/photo_capture"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/button_capture"
+        />
+
+        <ImageButton
+            android:id="@+id/photo_undo"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="64dp"
+            android:layout_toLeftOf="@+id/photo_capture"
+            android:minHeight="56dp"
+            android:minWidth="56dp"
+            android:src="@drawable/button_undo"
+            android:visibility="gone"
+            tools:visibility="visible"
+        />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/rsb_progress"
+        android:visibility="gone"
+    />
+
+</RelativeLayout>

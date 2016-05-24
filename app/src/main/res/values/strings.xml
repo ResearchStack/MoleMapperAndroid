@@ -1,0 +1,295 @@
+<resources>
+    <string name="app_name">Mole Mapper</string>
+
+    <!-- Eligibility-->
+    <string name="eligibility_title">Are you 18 or older?</string>
+    <string name="eligibility_text">This study is designed for people at least 18 years old who are
+        comfortable using an Android phone and the Android camera.
+    </string>
+
+    <!-- Menu items -->
+    <string name="menu_toggle_body">Toggle Body</string>
+    <string name="menu_update_zone_photo">Update Zone Photo</string>
+    <string name="menu_delete_zone">Delete Zone</string>
+    <string name="menu_delete_measurement">Delete Measurement</string>
+    <string name="body_map">My Moles</string>
+
+    <!-- Body Zones -->
+    <string name="zone_front">front</string>
+    <string name="z1100">Head</string>
+    <string name="z1200">Neck &amp; Center Chest</string>
+    <string name="z1250">Right Pectoral</string>
+    <string name="z1251">Left Pectoral</string>
+    <string name="z1300">Right Abdomen</string>
+    <string name="z1301">Left Abdomen</string>
+    <string name="z1350">Right Pelvis</string>
+    <string name="z1351">Left Pelvis</string>
+    <string name="z1400">Right Upper Thigh</string>
+    <string name="z1401">Left Upper Thigh</string>
+    <string name="z1450">Right Lower Thigh &amp; Knee</string>
+    <string name="z1451">Left Lower Thigh &amp; Knee</string>
+    <string name="z1500">Right Upper Calf</string>
+    <string name="z1501">Left Upper Calf</string>
+    <string name="z1550">Right Lower Calf</string>
+    <string name="z1551">Left Lower Calf</string>
+    <string name="z1600">Right Ankle &amp; Foot</string>
+    <string name="z1601">Left Ankle &amp; Foot</string>
+    <string name="z1650">Right Shoulder</string>
+    <string name="z1651">Left Shoulder</string>
+    <string name="z1700">Right Upper Arm</string>
+    <string name="z1701">Left Upper Arm</string>
+    <string name="z1750">Right Upper Forearm</string>
+    <string name="z1751">Left Upper Forearm</string>
+    <string name="z1800">Right Lower Forearm</string>
+    <string name="z1801">Left Lower Forearm</string>
+    <string name="z1850">Right Hand</string>
+    <string name="z1851">Left Hand</string>
+
+    <string name="zone_back">back</string>
+    <string name="z2100">Head</string>
+    <string name="z2200">Neck</string>
+    <string name="z2250">Left Upper Back</string>
+    <string name="z2251">Right Upper Back</string>
+    <string name="z2300">Left Lower Back</string>
+    <string name="z2301">Right Lower Back</string>
+    <string name="z2350">Left Glute</string>
+    <string name="z2351">Right Glute</string>
+    <string name="z2400">Left Upper Thigh</string>
+    <string name="z2401">Right Upper Thigh</string>
+    <string name="z2450">Left Lower Thigh &amp; Knee</string>
+    <string name="z2451">Right Lower Thigh &amp; Knee</string>
+    <string name="z2500">Left Upper Calf</string>
+    <string name="z2501">Right Upper Calf</string>
+    <string name="z2550">Left Lower Calf</string>
+    <string name="z2551">Right Lower Calf</string>
+    <string name="z2600">Left Ankle &amp; Foot</string>
+    <string name="z2601">Right Ankle &amp; Foot</string>
+    <string name="z2650">Left Shoulder</string>
+    <string name="z2651">Right Shoulder</string>
+    <string name="z2700">Left Upper Arm</string>
+    <string name="z2701">Right Upper Arm</string>
+    <string name="z2750">Left Elbow</string>
+    <string name="z2751">Right Elbow</string>
+    <string name="z2800">Left Lower Forearm</string>
+    <string name="z2801">Right Lower Forearm</string>
+    <string name="z2850">Left Hand</string>
+    <string name="z2851">Right Hand</string>
+
+    <string name="zone_head">head</string>
+    <string name="z3150">Left Side of Face</string>
+    <string name="z3151">Right Side of Face</string>
+    <string name="z3170">Top of Head</string>
+    <string name="z3171">Front of Face</string>
+    <string name="z3172">Back of Head</string>
+
+    <!-- Main Menu Items -->
+    <string name="learn_more">Learn more</string>
+
+    <!-- MoleMapper Fragment-->
+    <string name="mole_follow_up">Follow Up</string>
+    <string name="mole_to_do">To do</string>
+    <string name="mole_done">Done</string>
+    <string name="last_checked">Last checked in %1$s</string>
+    <string name="checked_in">Checked %1$s %2$s</string>
+    <string name="size_increase">▲%1$.2f%% to %2$.2fmm</string>
+    <string name="measurement_text">%1$.2fmm</string>
+    <string name="not_applicable">NA</string>
+    <string name="instruction_record_moles">Visit the body map to record moles</string>
+    <string name="default_empty_text">No data recorded yet…</string>
+    <string name="go_to_body_map">Go to body map</string>
+    <string name="later">Later</string>
+    <string name="update_removed_dialog_title">Update your removed moles</string>
+    <string name="update_removed_dialog_body">You indicated that one or more moles were removed this
+        month. Please visit the body map, touch a mole, then touch the \"delete\" icon to update
+        removed moles.
+    </string>
+    <string name="never_measured">Never measured</string>
+
+    <!-- Dashboard Fragment -->
+    <string name="general_stats">General stats</string>
+    <string name="chart_progress_center">%1$d of %2$d</string>
+    <string name="uv_levels">UV levels</string>
+    <string name="uv_permission_details">MoleMapper needs permission to use your location to find
+        accurate UV levels.
+    </string>
+    <string name="mole_size_over_time">Mole size over time</string>
+
+    <!-- Settings Fragment-->
+    <string name="profession">Profession</string>
+    <string name="profession_unknown">Unknown</string>
+    <string name="settings_app">App</string>
+    <string name="settings_app_mole_name_scheme">Mole naming convention</string>
+
+    <!-- MoleLearnActivity -->
+    <string name="thanks_feedback">Thank you for your help and feedback!</string>
+
+    <!-- BodyMapActivity -->
+    <string name="body_map_front">Front</string>
+    <string name="body_map_back">Back</string>
+
+    <!-- PhotoCaptureActivity
+
+    Copyright 2013 The Android Open Source Project
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    -->
+
+    <string name="request_permission">MoleMapper needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="error_camera_configure_failed">Camera Configuration Failed</string>
+
+    <!-- BodyZoneActivity -->
+    <string name="photo_cap_inst_mole">Place a coin near your mole for reference.</string>
+    <string name="zone_add_mole_hint_highlight">Highlight moles with your finger.</string>
+    <string name="zone_add_mole_hint_select">Touch a mole to start measuring</string>
+    <string name="dialog_delete_zone_photo_title">Are you sure?</string>
+    <string name="dialog_delete_zone_photo_text">You will also lose all documented moles and
+        measurements. This action cannot be undone.
+    </string>
+    <string name="biopsy_step_title">Biopsy Site Photo</string>
+    <string name="biopsy_step_text">When it is safe to do so without a bandage, please measure the
+        area where the mole was removed in the same way you would measure your mole.\n\nThis will
+        help us understand the results of your procedure.
+    </string>
+    <string name="biopsy_thank_you_text">The data you are contributing to this research will help us
+        to understand and prevent skin cancer.
+    </string>
+    <string name="dialog_delete_zone_confirmed">Zone Deleted</string>
+    <string name="dialog_delete_zone_failed">Failed to delete zone</string>
+
+    <!-- MoleMeasurementActivity -->
+    <string name="reference">Reference:</string>
+    <string name="mole">MOLE</string>
+    <string name="finish">FINISH</string>
+
+    <!-- MoleGrowthDialog -->
+    <string name="update">Update</string>
+    <string name="close">Close</string>
+
+    <!-- Measurement History-->
+    <string name="mole_history">%1$s history</string>
+
+    <!-- Measurement Delete ConfirmDialog -->
+    <string name="delete_measurement">Delete this measurement</string>
+    <string name="delete_measurement_text">Are you sure you want to delete this measurement? This
+        action cannot be undone and your data will be lost forever.
+    </string>
+
+    <!-- MoleEditDialog -->
+    <string name="unnamed_mole">Unnamed Mole %1$d</string>
+    <string name="edit">Edit</string>
+    <string name="edit_mole">Edit mole</string>
+    <string name="save">Save</string>
+
+    <!-- MoleRemoveDialog -->
+    <string name="dialog_remove_title">Remove %1$s</string>
+    <string name="delete">Delete</string>
+    <string name="mole_deleted">Mole Deleted</string>
+    <string name="remove">Remove</string>
+    <string name="removed">Removed</string>
+    <string name="delete_mole">Delete this mole</string>
+    <string name="removed_doctor">This mole was removed by a doctor</string>
+    <string name="dashboard_progress_chart_title">Moles documented this month</string>
+    <string name="dashboard_uv_chart_title">UV forecast near you</string>
+
+    <!-- Followup Task -->
+    <string name="task_followup_title">Monthly Followup</string>
+    <string name="task_followup_text">We\'d like to ask you 5 quick questions about your activities
+        and health in the last month
+    </string>
+    <string name="task_followup_tan_title">In the past month, have you gotten a tan?</string>
+    <string name="task_followup_sunburn_title">In the past month, have you gotten sunburned?
+    </string>
+    <string name="task_followup_sunscreen_title">In the past month, have you used sunscreen?
+    </string>
+    <string name="task_followup_sick_title">In the past month, have you been sick enough to miss
+        work
+        or school?
+    </string>
+    <string name="task_followup_removed_title">In the past month, have you had any moles removed?
+    </string>
+    <string name="task_followup_thankyou_title">Thank you!</string>
+    <string name="task_followup_thankyou_text">Your dedication to consistently mapping and measuring
+        your moles every month is helping us to better understand skin cancer risk\n\nKeep up the
+        great work and Happy Mapping!
+    </string>
+
+    <!-- Initial Task -->
+    <string name="task_initial_step_title">Initial Survey</string>
+    <string name="task_initial_title">About You</string>
+    <string name="task_initial_text">We\'d like to ask you a few questions to better understand
+        potential melanoma risk\n\nThese questions should take less than 5 minutes
+    </string>
+    <string name="task_initial_gender_title">Gender</string>
+    <string name="task_initial_gender_female">Female</string>
+    <string name="task_initial_gender_male">Male</string>
+    <string name="task_initial_gender_other">Other</string>
+    <string name="task_initial_zip_code_title">What is your zip code?</string>
+    <string name="task_initial_birth_date_title">Birth Date</string>
+    <string name="task_initial_hair_eyes_title">Natural Hair and Eye Color</string>
+    <string name="task_initial_hair_title">Hair Color</string>
+    <string name="task_initial_hair_eyes_red_hair">Red Hair</string>
+    <string name="task_initial_hair_eyes_blond_hair">Blond Hair</string>
+    <string name="task_initial_hair_eyes_brown_hair">Brown Hair</string>
+    <string name="task_initial_hair_eyes_black_hair">Black Hair</string>
+    <string name="task_initial_eyes_title">Eye Color</string>
+    <string name="task_initial_eyes_blue">Blue Eyes</string>
+    <string name="task_initial_eyes_green">Green Eyes</string>
+    <string name="task_initial_eyes_brown">Brown Eyes</string>
+    <string name="task_initial_profession_title">Have you worked in any of the following
+        professions?
+    </string>
+    <string name="task_initial_profession_pilot">Pilot or flight crew</string>
+    <string name="task_initial_profession_dental">Dental professional</string>
+    <string name="task_initial_profession_construction">Construction</string>
+    <string name="task_initial_profession_radiology">Radiology Technician</string>
+    <string name="task_initial_profession_farming">Farming</string>
+    <string name="task_initial_profession_tsa">TSA Agent</string>
+    <string name="task_initial_profession_natural_res">Coal/Oil/Gas Extraction</string>
+    <string name="task_initial_profession_mil">Military Veteran</string>
+    <string name="task_initial_profession_doc">Doctor/Nurse</string>
+    <string name="task_initial_profession_weld">Welding/Soldering</string>
+    <string name="task_initial_profession_elect">Electrician</string>
+    <string name="task_initial_profession_bio_research">Biomedical Researcher</string>
+    <string name="task_initial_profession_none">None of the above choices</string>
+    <string name="task_initial_medical_info_title">Medical Information</string>
+    <string name="task_initial_medical_info_history">Have you ever been diagnosed with melanoma
+    </string>
+    <string name="task_initial_medical_info_history_fam">Has a blood relative (parent, sibling,
+        child) ever had melanoma?
+    </string>
+    <string name="task_initial_medical_info_removed_mole">Have you ever had a mole removed?</string>
+    <string name="task_initial_medical_info_auto_immune">Do you have an autoimmune condition
+        (Psoriasis, Crohn\'s disease, or others)?
+    </string>
+    <string name="task_initial_medical_info_immunocomp">Do you have a weakened immune system for any
+        reason (transplant recipient, lupus, prescribed drugs that suppress the immune system)?
+    </string>
+    <string name="task_initial_thankyou_title">Thank You!</string>
+    <string name="task_initial_thankyou_text">Your participation in this study is helping us to
+        better understand melanoma risk and skin health\n\nYour task now is to map and measure your
+        moles each month. You don\'t have to get them all, but the more the better!\n\nHappy
+        Mapping!
+    </string>
+
+    <!-- Mole Naming Convention -->
+    <string name="naming_convention_random">Random</string>
+    <string name="naming_convention_male">Male</string>
+    <string name="naming_convention_female">Female</string>
+
+    <!-- Overridden RS strings-->
+    <string name="rss_skip_signup">Join Later</string>
+    <string name="rsb_birth_date_too_young">You must be at least %1$s years old to participate in
+        this study.
+    </string>
+
+    <!-- Custom RS strings-->
+    <string name="zip_invalid">Zip code must be 5 digits long.</string>
+</resources>

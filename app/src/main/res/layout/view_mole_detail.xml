@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.researchstack.molemapper.ui.view.MoleDetailView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="56dp"
+    android:orientation="horizontal"
+    android:paddingRight="16dp"
+    tools:showIn="@layout/item_mole">
+
+    <ImageView
+        android:id="@+id/mole_progress"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:layout_marginLeft="6dp"
+        android:src="@drawable/rss_ic_circle_16dp"
+    />
+
+    <LinearLayout
+        android:id="@+id/mole_title_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="48dp"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/mole_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/text_color_mole_active"
+            tools:text="Molename1"/>
+        <TextView
+            android:id="@+id/mole_last_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_mole_inactive"
+            tools:text="Last checked in January"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/mole_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/text_color_mole_active"
+            tools:text="Right hand"/>
+        <TextView
+            android:id="@+id/mole_measurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_mole_inactive"
+            tools:text="2mm"/>
+    </LinearLayout>
+</org.researchstack.molemapper.ui.view.MoleDetailView>

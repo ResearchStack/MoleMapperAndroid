@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MoleMapper" parent="Theme.Backbone">
+        <item name="android:windowBackground">@android:color/white</item>
+        <!-- Text Color for ActionBar and Text -->
+        <item name="alertDialogTheme">@style/Theme.MoleMapper.Dialog</item>
+        <item name="android:alertDialogTheme">@style/Theme.MoleMapper.Dialog</item>
+
+        <item name="android:textColorPrimary">@color/rsb_warm_gray</item>
+        <item name="android:textColorSecondary">@color/rsb_warm_gray</item>
+
+        <item name="colorControlNormal">@color/rsb_warm_gray</item>
+        <item name="colorPrimary">@color/mm_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/mm_colorPrimaryDark</item>
+        <item name="colorAccent">@color/mm_colorAccent</item>
+        <item name="toolbarTheme">@style/Theme.MoleMapper.Toolbar</item>
+        <item name="passcodeTheme">@style/Theme.AppCompat.Light.NoActionBar</item>
+        <item name="icontablayoutStyle">@style/Widget.MoleMapper.IconTabLayout</item>
+        <item name="submitbarStyle">@style/Widget.MoleMapper.SubmitBar</item>
+        <item name="progressChartCardStyle">@style/Widget.MoleMapper.Chart.Progress</item>
+        <item name="emptyviewStyle">@style/Widget.MoleMapper.EmptyView</item>
+    </style>
+
+    <style name="Theme.MoleMapper" parent="Base.Theme.MoleMapper">
+        <item name="android:selectableItemBackground">@drawable/bg_selectable</item>
+    </style>
+
+    <style name="Theme.MoleMapper.Toolbar">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="toolbarStyle">@style/Widget.MoleMapper.Toolbar</item>
+    </style>
+
+    <style name="Theme.MoleMapper.Survey">
+        <item name="toolbarTheme">@style/Theme.MoleMapper.Toolbar.Transparent</item>
+        <item name="colorPrimaryDark">@color/mm_dark_gray</item>
+        <item name="colorAccent">@color/mm_colorAccent_survey</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.MoleMapper.Toolbar.Transparent">
+        <item name="colorControlNormal">@color/rsb_warm_gray</item>
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="toolbarStyle">@style/Widget.MoleMapper.Toolbar.Transparent</item>
+    </style>
+
+    <style name="Theme.MoleMapper.Main">
+        <item name="android:windowBackground">@color/mm_light_gray</item>
+        <item name="toolbarTheme">@style/Theme.MoleMapper.Toolbar.Main</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.MoleMapper.Toolbar.Main">
+        <item name="toolbarStyle">@style/Base.Widget.MoleMapper.Toolbar</item>
+    </style>
+
+    <style name="Base.Theme.MoleMapper.TransparentStatusBar" parent="@style/Theme.MoleMapper">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimaryDark">@color/rsb_black_40</item>
+    </style>
+
+    <style name="Theme.MoleMapper.TransparentStatusBar"
+           parent="@style/Base.Theme.MoleMapper.TransparentStatusBar"/>
+
+    <style name="Theme.MoleMapper.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/mm_colorAccent_survey</item>
+        <item name="android:textColorPrimary">@color/rsb_warm_gray</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="Theme.MoleMapper.Settings">
+        <item name="android:textColor">@color/text_color_settings_title</item>
+        <item name="android:textColorPrimary">@color/rsb_black</item>
+        <item name="android:textColorSecondary">@color/text_color_settings_summary</item>
+        <item name="colorAccent">@color/mm_teal</item>
+        <item name="colorControlNormal">@color/rsb_black</item>
+        <item name="preferenceTheme">@style/Theme.MoleMapper.Settings.Preference</item>
+    </style>
+
+    <style name="Theme.MoleMapper.Settings.Preference"
+           parent="@style/PreferenceThemeOverlay.v14.Material">
+        <item name="preferenceFragmentCompatStyle">@style/PreferenceFragment.MoleMapper</item>
+        <item name="preferenceFragmentStyle">@style/PreferenceFragment.MoleMapper</item>
+    </style>
+
+    <style name="Theme.MoleMapper.Splash">
+        <item name="android:windowBackground">@drawable/bg_mole_splash</item>
+        <item name="colorPrimaryDark">@color/mm_med_gray</item>
+    </style>
+
+    <style name="Theme.MoleMapper.Onboarding">
+        <item name="android:windowBackground">@color/mm_gray</item>
+        <item name="colorButtonNormal">@color/mm_colorAccent_survey</item>
+        <item name="colorPrimaryDark">@color/mm_dark_gray</item>
+    </style>
+
+    <style name="Theme.MoleMapper.Video">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+    </style>
+
+</resources>

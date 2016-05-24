@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <org.researchstack.molemapper.ui.view.ZoneView
+        android:id="@+id/zone_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    />
+
+    <include layout="@layout/rsb_layout_toolbar"/>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="4dp"
+        android:drawableTint="#979797"
+        android:drawableTop="@drawable/ic_action_camera_48dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="This zone hasn’t been\nphotographed yet"
+        android:textColor="#979797"
+        android:textSize="20sp"
+        android:visibility="gone"
+        tools:visibility="visible"
+    />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_action_add_mole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:minHeight="56dp"
+        android:minWidth="56dp"
+        android:src="@drawable/ic_action_add_24dp"
+        android:tint="?attr/colorPrimary"
+        app:backgroundTint="@android:color/white"
+    />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_action_capture_zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:minHeight="56dp"
+        android:minWidth="56dp"
+        android:src="@drawable/ic_action_camera_24dp"
+        android:tint="@android:color/white"
+        android:visibility="gone"
+        app:backgroundTint="?attr/colorPrimary"
+        tools:visibility="visible"
+    />
+
+    <LinearLayout
+        android:id="@+id/zone_add_mole_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:translationY="48dp"
+    >
+
+        <!-- negative margin so that text has proper margin when image is 'gone' -->
+        <ImageView
+            android:id="@+id/zone_add_mole_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-16dp"
+            android:alpha=".4"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/ic_x"
+        />
+
+        <TextView
+            android:id="@+id/zone_add_mole_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="@string/zone_add_mole_hint_highlight"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+        />
+
+        <TextView
+            android:id="@+id/zone_add_mole_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:padding="16dp"
+            android:text="@string/rsb_next"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

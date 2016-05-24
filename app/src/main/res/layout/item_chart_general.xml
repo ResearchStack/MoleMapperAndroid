@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ChartTitleText"
+            android:text="@string/general_stats"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Biggest mole size"
+                    android:textColor="@color/mm_colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/stats_subtitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Molename1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/stats_data1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/mm_colorPrimary"
+                android:textSize="20sp"
+                tools:text="4mm"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Average mole size"
+                android:textColor="@color/mm_colorPrimary"/>
+
+            <TextView
+                android:id="@+id/stats_data2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                tools:text="2.15mm"
+                android:textColor="@color/mm_colorPrimary"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/mm_med_gray"/>
+
+        <android.support.v7.widget.AppCompatButton
+            style="@style/Button.Borderless.Orange"
+            android:id="@+id/chat_general_track"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            android:text="Track Moles"
+            android:textColor="@color/mm_orange"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.CardView>

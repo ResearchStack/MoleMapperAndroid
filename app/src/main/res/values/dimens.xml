@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="launchscreen_mole_bottom">200.0dip</dimen>
+    <dimen name="launchscreens_text_bottom">88.0dip</dimen>
+
+    <dimen name="mm_measure_stroke_edge_size">1dp</dimen>
+    <dimen name="mm_measure_stroke_highlight_size">18dp</dimen>
+    <dimen name="mm_measure_text_size">18dp</dimen>
+    <dimen name="mm_measure_initial_mole_radius">15dp</dimen>
+    <dimen name="mm_measure_initial_reference_radius">35dp</dimen>
+
+    <dimen name="mm_history_stroke_edge_size">2dp</dimen>
+    <dimen name="mm_history_text_size">14dp</dimen>
+    <dimen name="mm_history_text_offset">8dp</dimen>
+
+</resources>

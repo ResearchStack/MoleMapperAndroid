@@ -1,0 +1,126 @@
+<resources>
+
+    <style name="Widget.MoleMapper.IconTabLayout" parent="@style/Widget.Backbone.IconTabLayout">
+        <item name="tabIconColor">@android:color/white</item>
+        <item name="tabIconIndicatorColor">@color/rsb_error</item>
+        <item name="tabTextColor">@color/mm_tab_text_color</item>
+    </style>
+
+    <style name="Widget.MoleMapper.SubmitBar" parent="@style/Widget.Backbone.SubmitBar"/>
+
+    <style name="Base.Widget.MoleMapper.Toolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Widget.MoleMapper.Toolbar.Title
+        </item>
+    </style>
+
+    <style name="Widget.MoleMapper.Toolbar" parent="@style/Base.Widget.MoleMapper.Toolbar">
+        <item name="android:foreground">?android:windowContentOverlay</item>
+    </style>
+
+    <style name="Widget.MoleMapper.Toolbar.Transparent"
+           parent="@style/Base.Widget.MoleMapper.Toolbar">
+        <item name="titleTextAppearance">
+            @style/TextAppearance.Widget.MoleMapper.Toolbar.Title.Transparent
+        </item>
+    </style>
+
+    <style name="Widget.MoleMapper.ActionButton.Overflow"
+           parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="Widget.MoleMapper.Onboarding.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/mm_colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.Widget.MoleMapper.Toolbar.Title"
+           parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.Widget.MoleMapper.Toolbar.Title.Transparent">
+        <item name="android:textColor">@color/rsb_warm_gray</item>
+    </style>
+
+    <style name="Button.Borderless.Orange" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/mm_orange</item>
+    </style>
+
+    <style name="Button.Borderless.Blue" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/mm_colorPrimary</item>
+    </style>
+
+    <style name="Dialog.Body" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+        <item name="colorAccent">@color/mm_colorPrimary</item>
+        <item name="colorPrimary">@color/mm_colorPrimary</item>
+        <item name="colorControlActivated">@color/mm_colorPrimary</item>
+        <item name="colorControlNormal">@color/rsb_warm_gray</item>
+    </style>
+
+    <style name="Widget.MoleMapper.Chart.Progress" parent="@style/Widget.Backbone.Chart.Progress">
+        <item name="tabIndicatorColor">?attr/colorPrimary</item>
+        <item name="tabTextColor">#66255aa8</item>
+        <item name="tabSelectedTextColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.MoleMapper.EmptyView" parent="">
+        <item name="android:background">#d5e8ff</item>
+        <item name="emptyIcon">@drawable/rsb_illo_dashboard_empty</item>
+        <item name="emptyIconTint">?attr/colorPrimaryDark</item>
+        <item name="emptyText">@string/default_empty_text</item>
+        <item name="emptyTextAppearance">@style/TextAppearance.Widget.Backbone.EmptyView</item>
+    </style>
+
+    <style name="ChartTitleText">
+        <item name="android:padding">16dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ChartTitleText.Dialog">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ChartTabStyle">
+        <item name="tabIndicatorColor">@color/mm_colorPrimary</item>
+        <item name="tabBackground">@android:color/white</item>
+        <item name="tabTextColor">@color/mm_colorPrimary40</item>
+        <item name="tabSelectedTextColor">@color/mm_colorPrimary</item>
+    </style>
+
+    <style name="RemoveMoleOption">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/text_color_mole_inactive</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="RemoveMoleIcon">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:tint">@color/text_color_mole_inactive</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="PreferenceFragment.MoleMapper" parent="@style/PreferenceFragment.Material">
+        <item name="android:divider">@null</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "section_title": "Help",
+      "row_items": [
+        {
+          "title": "FAQs",
+          "details": "learn_faq"
+        },
+        {
+          "title": "Support",
+          "details": "learn_support"
+        }
+      ]
+    },
+    {
+      "section_title": "Info",
+      "row_items": [
+        {
+          "title": "OHSU War on Melanoma",
+          "details": "ohsu"
+        },
+        {
+          "title": "The Mole Mapper story",
+          "details": "learn_story"
+        },
+        {
+          "title": "Credits",
+          "details": "learn_credits"
+        }
+      ]
+    },
+    {
+      "section_title": "Feedback",
+      "row_items": [
+        {
+          "title": "Help us improve!",
+          "details": "feedback"
+        }
+      ]
+    }
+  ]
+}

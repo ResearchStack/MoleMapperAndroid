@@ -1,0 +1,148 @@
+{
+  "documentProperties": {
+    "htmlDocument": "app_consent_html",
+    "investigatorShortDescription": "The Mole Mapper Study Team and its partners",
+    "investigatorLongDescription": "The Mole Mapper Study Team",
+    "htmlContent": "consent_section_html_sharing_rsch",
+    "requiresSignature": true,
+    "requiresName": true,
+    "requiresBirthdate": true
+  },
+  "quiz": {
+    "questions": [
+      {
+        "identifier": "question1",
+        "prompt": "I can leave this study at any time and still use the app to map my moles.",
+        "type": "boolean",
+        "positiveFeedback": "If you withdraw from the study, your data will no longer be shared with researchers.  The app is still yours to use for free. You can re-enroll at any time through the settings menu.",
+        "negativeFeedback": "If you withdraw from the study, your data will no longer be shared with researchers.  The app is still yours to use for free. You can re-enroll at any time through the settings menu.",
+        "expectedAnswer": "true"
+      },
+      {
+        "identifier": "question2",
+        "prompt": "My name and identifying information will be separated from my mole data when it is securely stored.",
+        "type": "boolean",
+        "positiveFeedback": "Your identifying information is separated from your mole data and photos to protect your privacy.",
+        "negativeFeedback": "Your identifying information is separated from your mole data and photos to protect your privacy.",
+        "expectedAnswer": "true"
+      },
+      {
+        "identifier": "question3",
+        "prompt": "There is a risk of my mole photos being identifiable if they contain a distinguishing mark like a tattoo.",
+        "type": "boolean",
+        "positiveFeedback": "We cannot guarantee that every mole photo you take will be anonymous. Please be careful when taking mole photos of your face, sensitive areas, or areas with distinguishing marks.",
+        "negativeFeedback": "We cannot guarantee that every mole photo you take will be anonymous. Please be careful when taking mole photos of your face, sensitive areas, or areas with distinguishing marks.",
+        "expectedAnswer": "true"
+      },
+      {
+        "identifier": "question4",
+        "prompt": "I can skip any survey question without answering",
+        "type": "boolean",
+        "positiveFeedback": "There is an option for every survey question to 'skip' without answering and to move on to the next question.",
+        "negativeFeedback": "There is an option for every survey question to 'skip' without answering and to move on to the next question.",
+        "expectedAnswer": "true"
+      },
+      {
+        "identifier": "question5",
+        "prompt": "This app is designed to diagnose or treat melanoma.",
+        "type": "boolean",
+        "positiveFeedback": "This is a mole tracking app for your personal use and for the use of conducting a research study, but it can not diagnose or treat melanoma.",
+        "negativeFeedback": "This is a mole tracking app for your personal use and for the use of conducting a research study, but it can not diagnose or treat melanoma.",
+        "expectedAnswer": "false"
+      }
+    ],
+    "successTitle": "Great Job!",
+    "successMessage": "You answered all of the questions correctly. Tap Next to continue.",
+    "failureTitle": "Try again",
+    "failureMessage": "Unfortunately, you answered one or more questions incorrectly on the quiz. We need you to repeat the quiz to make sure you understand what you need to know about the study.",
+    "allowedFailures": 0,
+    "incorrectIcon": "rss_ic_quiz_retry",
+    "correctIcon": "rss_ic_quiz_valid"
+  },
+  "sections": [
+    {
+      "sectionType": "overview",
+      "sectionTitle": "Consent Walkthrough",
+      "sectionSummary": "The next few screens will explain the research study and help you decide whether or not you want to participate\n\nAfter the walkthrough, we'll briefly test your understanding to make sure you know what is involved"
+    },
+    {
+      "sectionType": "dataGathering",
+      "sectionTitle": "Tracking Moles",
+      "sectionSummary": "To better understand skin health and melanoma risk, we will collect data about the moles that you have tracked in this app. This includes mole locations, mole sizes, and mole photos.",
+      "sectionHtmlContent": "consent_section_html_dataprocessing"
+    },
+    {
+      "sectionType": "privacy",
+      "sectionTitle": "Your Privacy",
+      "sectionSummary": "We will make every effort to protect your privacy. We will replace your name with a random code on all of your study data. However, total anonymity cannot be guaranteed.",
+      "sectionHtmlContent": "consent_section_html_protectingdata"
+    },
+    {
+      "sectionType": "dataUse",
+      "sectionTitle": "Data Use",
+      "sectionSummary": "We will add your data (without your name) to those of other study participants and look for clues to explain mole measurements and melanoma risks.",
+      "sectionHtmlContent": "consent_section_html_datause"
+    },
+    {
+      "sectionType": "timeCommitment",
+      "sectionTitle": "Time Commitment",
+      "sectionSummary": "The initial sign up and questions will take about 5-10 minutes. Monthly follow-ups will include a 1-minute survey and an update of your mole measurements (about 1 minute each)",
+      "sectionHtmlContent": "consent_section_html_time"
+    },
+    {
+      "sectionType": "studySurvey",
+      "sectionTitle": "Study Questions",
+      "sectionSummary": "First we will ask you a few questions about yourself and about potential melanoma risks. Monthly follow-up questions will focus on sun exposure and your health. You can skip any questions you do not wish to answer.",
+      "sectionMoreTitle": "Learn more about the study questions",
+      "sectionHtmlContent": "consent_section_html_study_survey"
+    },
+    {
+      "sectionType": "studyTasks",
+      "sectionTitle": "Potential Benefits",
+      "sectionSummary": "Your participation could help us understand the underlying causes of melanoma. You will be able to visualize and track your own data and potentially learn more about trends in your health.",
+      "sectionMoreTitle": "Learn more about the potential benefits",
+      "sectionHtmlContent": "consent_section_html_study_task"
+    },
+    {
+      "sectionType": "withdrawing",
+      "sectionTitle": "Potential Risks",
+      "sectionSummary": "Participation in this study may involve risks to your privacy and other risks that are not known at this time.",
+      "sectionMoreTitle": "Learn more about the potential risks",
+      "sectionHtmlContent": "consent_section_html_withdrawing"
+    },
+    {
+      "sectionType": "custom",
+      "sectionTitle": "Protecting Your Data",
+      "sectionSummary": "Your study data will be encrypted on the phone and stored, without your name, on a secure cloud server.",
+      "sectionImage": "rsb_consent_section_potential_benefits_alt",
+      "sectionAnimationUrl": "10_PotentialBenifits_Alt",
+      "sectionMoreTitle": "Learn more about data protection",
+      "sectionHtmlContent": "consent_section_html_security"
+    },
+    {
+      "sectionType": "custom",
+      "sectionTitle": "Issues to Consider",
+      "sectionSummary": "Mole Mapper doesn’t replace your medical care. It is a research study and doesn’t provide diagnosis or treatment recommendations.",
+      "sectionImage": "rsb_consent_section_visiting_doctor",
+      "sectionAnimationUrl": "10_PotentialBenifits_Alt",
+      "sectionMoreTitle": "Learn more about issues to consider",
+      "sectionHtmlContent": "consent_section_html_talktodoctor"
+    },
+    {
+      "sectionType": "custom",
+      "sectionTitle": "Follow Up",
+      "sectionSummary": "Your name and contact information will be included in the OHSU War on Melanoma Community Registry. You can opt out of this registry at any time.",
+      "sectionImage": "rsb_consent_section_recontact",
+      "sectionMoreTitle": "Learn more about follow up",
+      "sectionAnimationUrl": "10_Recontact_Alt",
+      "sectionHtmlContent": "consent_section_html_recontact"
+    },
+    {
+      "sectionType": "custom",
+      "sectionTitle": "Withdraw at any time",
+      "sectionSummary": "Your participation is voluntary. You may withdraw at any time.",
+      "sectionImage": "consent_section_withdraw",
+      "sectionHtmlContent": "consent_section_html_withdraw"
+    }
+  ]
+}

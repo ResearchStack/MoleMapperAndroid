@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mm_colorPrimary">#255aa8</color>
+    <color name="mm_colorPrimaryDark">#1f4884</color>
+    <color name="mm_colorAccent">#ff5722</color>
+    <color name="mm_colorAccent_survey">#2196f3</color>
+    <color name="mm_colorAccent_settings">#009891</color>
+    <color name="mm_dark_gray">#666666</color>
+    <color name="mm_warm_grey">#757575</color>
+    <color name="mm_med_gray">#e5e5e5</color>
+    <color name="mm_light_gray">#fafafa</color>
+    <color name="mm_gray">#EEEEEE</color>
+    <color name="mm_window">#fafafa</color>
+    <color name="mm_colorPrimary40">#66255aa8</color>
+    <color name="mm_orange">#ff5722</color>
+    <color name="mm_teal">#009891</color>
+    <color name="mm_tab_text_color">#66FFFFFF</color>
+
+
+    <color name="text_color_mole_inactive">#979797</color>
+    <color name="text_color_mole_active">#4a4a4a</color>
+    <color name="mm_color_mole_outdated">#FF255aa8</color>
+
+    <color name="mm_color_measure_reference">#FF009891</color>
+    <color name="mm_color_measure_mole">#FF255aa8</color>
+
+    <!-- MoleView colors -->
+    <color name="mm_color_measure_mole_highlight">#66245aa8</color>
+    <color name="mm_color_measure_mole_edge">#99FFFFFF</color>
+    <color name="mm_color_measure_reference_highlight">#66009891</color>
+    <color name="mm_color_measure_reference_edge">#99FFFFFF</color>
+    <color name="mm_color_measure_text_color">@android:color/white</color>
+    <color name="mm_color_history_mole_edge">#FFFFFFFF</color>
+
+    <!-- BodyMapView colors -->
+    <color name="mm_color_body_map_front">#FF5392ef</color>
+    <color name="mm_color_body_map_back">#FF16C6B6</color>
+
+</resources>

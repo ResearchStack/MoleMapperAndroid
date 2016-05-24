@@ -1,0 +1,21 @@
+{
+  "disease_name": "Asthma",
+  "from_date": "December 2014",
+  "to_date": "January 2015",
+  "logo_name": "ic_mm_logo",
+  "questions": [
+    {
+      "title": "Welcome to Mole Mapper!",
+      "details": "This app helps you track your moles over time and participate in a research study to better understand skin health and melanoma risks",
+      "show_consent": "no"
+    },
+    {
+      "title": "Join This Study",
+      "details": "study_overview_join"
+    },
+    {
+      "title": "What is involved",
+      "details": "study_overview_about"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "identifier": "FeedbackSurvey",
+  "type": "Survey",
+  "name": "Feedback",
+  "elements": [
+    {
+      "identifier": "feedback",
+      "prompt": "Please help us make this app more useful to you and more powerful to physicians and scientists. Please provide us with anonymous feedback below.",
+      "uiHint": "Text",
+      "type": "SurveyQuestion",
+      "optional": false,
+      "constraints": {
+        "dataType": "text",
+        "type": "TextConstraints",
+        "multipleLines": true
+      }
+    }
+  ]
+}

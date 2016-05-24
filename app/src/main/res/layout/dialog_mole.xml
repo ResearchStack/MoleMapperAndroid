@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+>
+
+    <include
+        android:id="@+id/dialog_mole_info_container"
+        layout="@layout/view_mole_detail"/>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/dialog_mole_graph_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFe5e5e5"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chart_title"
+                style="@style/ChartTitleText"
+                tools:text="Growth over time"/>
+
+            <ImageButton
+                style="@style/Widget.AppCompat.ActionButton"
+                android:id="@+id/chart_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:minWidth="56dp"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_image_multiple_24dp"/>
+
+        </FrameLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"/>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFe5e5e5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="56dp"
+    >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dialog_mole_edit"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="16dp"
+            android:padding="16dp"
+            android:text="@string/edit"
+            android:textColor="@color/rsb_submit_bar_negative"
+            tools:visibility="visible"
+        />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dialog_mole_cancel"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            android:textColor="@color/rsb_submit_bar_negative"
+        />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dialog_mole_update"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
