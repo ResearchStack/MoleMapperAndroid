@@ -8,11 +8,15 @@ Oregon Health & Science University will be posting their public fork of Mole Map
 
 # About MoleMapper
 
-MoleMapper is a personalized tool to help you map, measure, and monitor the moles on your skin. Using a familiar Maps-like interface, you can measure the size of a mole using the camera and a common reference object like a coin.
+Mole Mapper is a personalized tool to help you map, measure, and monitor the moles on your skin. Using a familiar Maps-like interface, you can measure the size of a mole using the camera and a common reference object like a coin.
 
-If you are 18 or older, MoleMapper also gives you the option to participate in a research study developed in partnership with researchers at Oregon Health & Science University and Sage Bionetworks, a 501 (c)(3) nonprofit research organization to better understand skin biology and melanoma risks.
+If you are 18 or older, Mole Mapper also gives you the option to participate in a research study developed in partnership with researchers at Oregon Health & Science University and Sage Bionetworks, a 501 (c)(3) nonprofit research organization to better understand skin biology and melanoma risks.
+
+Keeping track of the size, shape and color of your moles is the best way to catch potential skin cancers like melanoma in their early stages. Whether you use Mole Mapper to keep track of a single suspicious mole over time or construct a full-body map, we hope this app will make being vigilant about your health a bit more enjoyable.
 
 The MoleMapper research study was created in partnership with researchers at Oregon Health & Science University and Sage Bionetworks. Unless otherwise noted, it should be assumed that all images, logos, and trademarks are copyrighted and should be used only with permission of the original copyright owners.
+
+Happy Mapping!
 
 ### 3<sup>rd</sup>-party library disclosures
 

@@ -2,6 +2,7 @@ package org.researchstack.molemapper.bridge;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
@@ -82,6 +83,8 @@ public abstract class BridgeDataProvider extends DataProvider
     public static final String TEMP_CONSENT_JSON_FILE_NAME = "/consent_sig";
     public static final String USER_SESSION_PATH           = "/user_session";
     public static final String USER_PATH                   = "/user";
+    // This value should come from the consentResult, by default it is the Study ID
+    public static final String MOLE_MAPPER_SUBPOPULATION_GUID = BuildConfig.STUDY_ID;
 
     private   BridgeService   service;
     private   S3Service       s3service;
@@ -103,7 +106,35 @@ public abstract class BridgeDataProvider extends DataProvider
 
     protected abstract String getStudyId();
 
-    protected abstract String getUserAgent();
+    protected final String getUserAgent() {
+        return getStudyName() + "/" + getAppVersion() + " (" + getDeviceName() + "; Android " + Build.VERSION.RELEASE + ") BridgeSDK/0";
+    }
+
+    protected abstract String getStudyName();
+
+    protected abstract String getAppVersion();
+
+    private String getDeviceName() {
+        String manufacturer = Build.MANUFACTURER;
+        String model = Build.MODEL;
+        if (model.startsWith(manufacturer)) {
+            return capitalize(model);
+        } else {
+            return capitalize(manufacturer) + " " + model;
+        }
+    }
+
+    private String capitalize(String s) {
+        if (s == null || s.length() == 0) {
+            return "";
+        }
+        char first = s.charAt(0);
+        if (Character.isUpperCase(first)) {
+            return s;
+        } else {
+            return Character.toUpperCase(first) + s.substring(1);
+        }
+    }
 
     public BridgeDataProvider()
     {
@@ -207,7 +238,7 @@ public abstract class BridgeDataProvider extends DataProvider
     @Override
     public Observable<DataResponse> withdrawConsent(Context context, String reason)
     {
-        return service.withdrawConsent(getStudyId(), new WithdrawalBody(reason))
+        return service.withdrawConsent(MOLE_MAPPER_SUBPOPULATION_GUID, new WithdrawalBody(reason))
                 .compose(ObservableUtils.applyDefault())
                 .doOnNext(response -> {
                     if(response.isSuccess())
@@ -431,12 +462,12 @@ public abstract class BridgeDataProvider extends DataProvider
     @Override
     public void uploadConsent(Context context, TaskResult consentResult)
     {
-        uploadConsent(context, createConsentSignatureBody(consentResult));
+        uploadConsent(context, MOLE_MAPPER_SUBPOPULATION_GUID, createConsentSignatureBody(consentResult));
     }
 
-    private void uploadConsent(Context context, ConsentSignatureBody consent)
+    private void uploadConsent(Context context, String subpopulationGuid, ConsentSignatureBody consent)
     {
-        service.consentSignature(getStudyId(), consent)
+        service.consentSignature(subpopulationGuid, consent)
                 .compose(ObservableUtils.applyDefault())
                 .subscribe(response -> {
                     if(response.code() == 201 ||
@@ -749,7 +780,7 @@ public abstract class BridgeDataProvider extends DataProvider
         {
             LogExt.d(getClass(), "NEED TO UPLOAD CONSENT, UPLOADING");
             ConsentSignatureBody consent = loadConsentSignatureBody(context);
-            uploadConsent(context, consent);
+            uploadConsent(context, MOLE_MAPPER_SUBPOPULATION_GUID, consent);
             return;
         }
 
@@ -987,8 +1018,9 @@ public abstract class BridgeDataProvider extends DataProvider
         Observable<Response<UserSessionInfo>> signIn(@Body SignInBody body);
 
         @Headers("Content-Type: application/json")
-        @POST("v3/subpopulations/{studyId}/consents/signature")
-        Observable<Response<BridgeMessageResponse>> consentSignature(@Path("studyId") String studyId, @Body ConsentSignatureBody body);
+        @POST("v3/subpopulations/{subpopulationGuid}/consents/signature")
+        Observable<Response<BridgeMessageResponse>> consentSignature(@Path("subpopulationGuid") String subpopulationGuid,
+                                                                     @Body ConsentSignatureBody body);
 
         /**
          * @return Response code <b>200</b> w/ message explaining instructions on how the user
@@ -999,8 +1031,9 @@ public abstract class BridgeDataProvider extends DataProvider
         Observable<Response<BridgeMessageResponse>> requestResetPassword(@Body EmailBody body);
 
 
-        @POST("v3/subpopulations/{studyId}/consents/signature/withdraw")
-        Observable<Response<BridgeMessageResponse>> withdrawConsent(@Path("studyId") String studyId, @Body WithdrawalBody withdrawal);
+        @POST("v3/subpopulations/{subpopulationGuid}/consents/signature/withdraw")
+        Observable<Response<BridgeMessageResponse>> withdrawConsent(@Path("subpopulationGuid") String subpopulationGuid,
+                                                                    @Body WithdrawalBody withdrawal);
 
         /**
          * @return Response code <b>200</b> w/ message explaining instructions on how the user
