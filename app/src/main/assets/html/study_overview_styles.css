@@ -9,7 +9,7 @@ a:link, a:active, a:visited, a:active {
 }
 
 img {
-    display: inline;
+    display: block;
     height: auto;
     max-width: 100%;
 }
@@ -80,4 +80,31 @@ ul, ol {
 
 .ExternalClass * {
     line-height: 100%
+}
+
+@media screen and (-webkit-device-pixel-ratio:0.75) {
+    img.logo {
+        background-image: url('res/drawable-ldpi/logo_institution.png');
+        width: 75px;
+        height: 75px;
+        border: 1px solid #ff0000;
+    }
+}
+
+@media screen and (-webkit-device-pixel-ratio:1.0) {
+    img.logo {
+        background-image: url('res/drawable-mdpi/logo_institution.png');
+        width: 100px;
+        height: 100px;
+        border: 1px solid #00ff00;
+    }
+}
+
+@media screen and (-webkit-device-pixel-ratio:1.5) {
+    img.logo {
+        background-image: url('res/drawable-hdpi/logo_institution.png');
+        width: 150px;
+        height: 150px;
+        border: 1px solid #0000ff;
+    }
 }

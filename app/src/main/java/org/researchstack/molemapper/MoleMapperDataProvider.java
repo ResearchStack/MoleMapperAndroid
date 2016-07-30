@@ -50,9 +50,13 @@ public class MoleMapperDataProvider extends BridgeDataProvider
     }
 
     @Override
-    protected String getUserAgent()
-    {
-        return BuildConfig.STUDY_NAME + "/" + BuildConfig.VERSION_CODE;
+    protected String getStudyName() {
+        return BuildConfig.STUDY_NAME;
+    }
+
+    @Override
+    protected String getAppVersion() {
+        return Integer.toString(BuildConfig.VERSION_CODE);
     }
 
     @Override
